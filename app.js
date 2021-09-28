@@ -11,7 +11,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-mongoose.connect('mongodb+srv://arunkudiyal:examplepwd@cluster0.2pssb.mongodb.net/myUserDB?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://gudiyasharma:examplepwd@cluster0.gr09l.mongodb.net/products?retryWrites=true&w=majority')
     .then(() => {
         console.log('Connection to the DB is successfull!')
     }).catch((err) => {
