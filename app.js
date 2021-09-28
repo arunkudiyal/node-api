@@ -6,7 +6,7 @@ const app = express()
 const morgan = require('morgan')
 
 const productRoutes = require('./api/routes/products')
-const homeRoute = require('./api/routes/products')
+const homeRoute = require('./api/routes/home')
 
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({extended: false}))
