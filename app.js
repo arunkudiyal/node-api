@@ -6,6 +6,7 @@ const app = express()
 const morgan = require('morgan')
 
 const productRoutes = require('./api/routes/products')
+const homeRoute = require('./api/routes/products')
 
 app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({extended: false}))
@@ -20,6 +21,7 @@ mongoose.connect('mongodb+srv://gudiyasharma:examplepwd@cluster0.gr09l.mongodb.n
     })
 
 // Manage a route | localhost:3000/products
+app.use('/', homeRoute)
 app.use('/products', productRoutes)
 
 
